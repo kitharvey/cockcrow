@@ -1,0 +1,179 @@
+header{
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color3;
+    .navbar{
+        width: 100%;
+        margin: 0 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .logo{     
+            margin-right: auto;
+            a {
+                img {
+                    margin-top: auto;
+                    height: 35px;
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+            }
+           
+        }
+
+        .menu-button{
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            visibility: hidden;
+            z-index: -1;
+            position: relative;
+            .burger{
+                position: absolute;
+                top: 16px;
+                height: 3px;
+                width: 32px;
+                background: $color;
+                transition: all .5s ease;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    height: 3px;
+                    width: 32px;
+                    background: $color;
+                    transition: all .5s ease;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 8px;
+                    height: 3px;
+                    width: 32px;
+                    background: $color;
+                    transition: all .5s ease;
+                }
+
+                &.open{
+                    transform: rotate(360deg);
+                    background: transparent;
+                    
+                    &::before{
+                        transform: rotate(45deg) translate(3.5px, 8px);
+                    }
+                    &::after{
+                        transform: rotate(-45deg) translate(3.5px, -8px);
+                    }
+                }
+            
+            }
+
+
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            width: 30%;
+            .menu-items{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: .8rem;
+                color: $color;
+                transition: ease;
+                &:hover{
+                    color: $color2;
+                    font-weight: 700;
+                }
+            }
+
+            .active-nav{
+                color: $color2;
+                font-weight: 700;
+            }     
+        }
+
+        .cart-btn{
+            margin-left: 10%;
+            .cart-button{
+                color: $color;
+                font-size: 1.5rem;
+                position: relative;
+                transition: ease;
+                cursor: pointer;
+                &:hover{
+                    color: $color2;
+                }
+
+                &:after {
+                    content: attr(data-count);
+                    position: absolute;
+                    height: .8rem;
+                    min-width: .8rem;
+                    width: max-content;
+                    top: -.5rem;
+                    right: -.5rem;
+                    text-align: center;
+                    text-justify: center;
+                    font-size: .5rem;
+                    color: $color3;
+                    background: $color;
+                    border-radius: 2rem;
+                    padding: 1px;
+                  }
+            }
+        }
+    }
+}
+
+
+@media (orientation: portrait){
+    header{
+        .navbar{
+            width: 95%;
+            margin: 0 auto;
+            .menu-button{
+                visibility: visible;
+                z-index: 2;
+                margin-left: 5%;
+
+                .burger{
+                    top: 40px;
+                    position: fixed;
+                }
+            }
+            .menu{
+                position: fixed;
+                justify-content: space-evenly;
+                top: 0;
+                flex-direction: column;
+                z-index: 1;
+                transform: translateY(-100%);
+                width: 100%;
+                height: 100vh;
+                background: $color3;
+                transition: all .5s ease;
+                &.open{
+                    transform: translateY(0%);
+                }
+            }
+
+            .cart-btn{
+               
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}
