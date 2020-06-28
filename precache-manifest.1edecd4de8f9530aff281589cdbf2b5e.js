@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d4aad2e8f811b055f9d74abf58879ed",
+    "revision": "b3c7db818bf55028c5b8f8d8cce1406e",
     "url": "/kitharvey/kitharvey.github.io/cockcrow/index.html"
   },
   {
-    "revision": "d192b3790c42468b29a4",
+    "revision": "a959d2c581347e33230d",
     "url": "/kitharvey/kitharvey.github.io/cockcrow/static/css/main.e424f81e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitharvey/kitharvey.github.io/cockcrow/static/js/2.91fd39ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d192b3790c42468b29a4",
-    "url": "/kitharvey/kitharvey.github.io/cockcrow/static/js/main.69c223f0.chunk.js"
+    "revision": "a959d2c581347e33230d",
+    "url": "/kitharvey/kitharvey.github.io/cockcrow/static/js/main.89a852e5.chunk.js"
   },
   {
     "revision": "d276f517e671e6217b11",

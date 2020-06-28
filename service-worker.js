@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kitharvey/kitharvey.github.io/cockcrow/precache-manifest.f070843818b91260d8165cc282360509.js"
+  "/kitharvey/kitharvey.github.io/cockcrow/precache-manifest.1edecd4de8f9530aff281589cdbf2b5e.js"
 );
 
 self.addEventListener('message', (event) => {
