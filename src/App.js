@@ -59,13 +59,13 @@ const App = () => {
       <Router>
         <Navigation isCartOpen={openCart} addToCartQuantityVariable = {addToCartQuantity} handleOpenCartVariable = {handleOpenCart} handleCloseCartVariable={handleCloseCart} toggleVariable = {toggle} handleToggleVariable = {handleToggle} handleCheckOutVariable = {handleCheckOut} checkOutVariable = {checkOut} handleRemoveVariable = {handleRemove} />
         <Switch>
-                <Route exact path="/about">
+                <Route exact path={`${process.env.PUBLIC_URL}/about`}>
                     <About />
                 </Route>
-                <Route exact path="/shop">
+                <Route exact path={`${process.env.PUBLIC_URL}/shop`}>
                     <Shop handleQuantityChangeVariable = {handleQuantityChange} handleAddToCartVariable = {handleAddToCart} />
                 </Route>
-                <Route exact path="/">
+                <Route exact path={`${process.env.PUBLIC_URL}/`}>
                     <Home />
                 </Route>
         </Switch>

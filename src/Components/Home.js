@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="main">
             <div className="hero-a">
-                <Link className="buy" to="/shop" >Buy Now</Link>
+                <Link className="buy" to={`${process.env.PUBLIC_URL}/shop`} >Buy Now</Link>
                 <small className="scroll">SCROLL</small>
             </div>
             <div className="hero-text">
@@ -21,7 +21,7 @@ const Home = () => {
             <div className="hero-text-bottom">
                 <p className="text">Cure for depresso.</p>
                 <small className="text-small"> Our team works round the clock to ensure your beans are roasted just two days before they’re packaged and delivered to your door. </small>
-                <Link className="buy" to="/shop" >Buy Now</Link>
+                <Link className="buy" to={`${process.env.PUBLIC_URL}/shop`} >Buy Now</Link>
             </div>
         </div>
     )

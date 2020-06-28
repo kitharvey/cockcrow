@@ -1,10 +1,15 @@
 @import "config";
-@import "header";
-@import "index";
-@import "cart";
-@import "footer";
-@import "about";
-@import "shop";
+
+
+.App{
+    @import "header";
+    @import "index";
+    @import "cart";
+    @import "footer";
+    @import "about";
+    @import "shop";  
+}
+
 
 
 
