@@ -10,13 +10,13 @@ const Navigation = ({isCartOpen, addToCartQuantityVariable, handleOpenCartVariab
             <header className="Header">
                 <div className="navbar">
                     <div className="logo">
-                        <NavLink to={`${process.env.PUBLIC_URL}/`}><img src={logo} alt="logo" /> </NavLink>
+                        <NavLink to={`/`}><img src={logo} alt="logo" /> </NavLink>
                     </div>
 
                     <div className={`menu ${toggleVariable ? 'open' : ''}`}>
-                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`${process.env.PUBLIC_URL}/`}>home</NavLink>
-                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`${process.env.PUBLIC_URL}/about`}>about</NavLink>
-                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`${process.env.PUBLIC_URL}/shop`}>shop</NavLink>
+                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`/`}>home</NavLink>
+                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`/about`}>about</NavLink>
+                        <NavLink onClick = {handleToggleVariable} activeClassName="active-nav" className= 'menu-items' exact to={`/shop`}>shop</NavLink>
                     </div>
 
                     <div className="cart-btn">

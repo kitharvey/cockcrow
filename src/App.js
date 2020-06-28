@@ -56,22 +56,21 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={`${process.env.PUBLIC_URL}`}>
         <Navigation isCartOpen={openCart} addToCartQuantityVariable = {addToCartQuantity} handleOpenCartVariable = {handleOpenCart} handleCloseCartVariable={handleCloseCart} toggleVariable = {toggle} handleToggleVariable = {handleToggle} handleCheckOutVariable = {handleCheckOut} checkOutVariable = {checkOut} handleRemoveVariable = {handleRemove} />
         <Switch>
-                <Route exact path={`${process.env.PUBLIC_URL}/about`}>
+                <Route exact path={`/about`}>
                     <About />
                 </Route>
-                <Route exact path={`${process.env.PUBLIC_URL}/shop`}>
+                <Route exact path={`/shop`}>
                     <Shop handleQuantityChangeVariable = {handleQuantityChange} handleAddToCartVariable = {handleAddToCart} />
                 </Route>
-                <Route exact path={`${process.env.PUBLIC_URL}/`}>
+                <Route exact path={`/`}>
                     <Home />
                 </Route>
         </Switch>
         <Footer />
       </Router>
-      
     </div>
   )
 }
