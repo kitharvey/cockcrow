@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router basename={`${process.env.PUBLIC_URL}`}>
+      <Router>
         <Navigation isCartOpen={openCart} addToCartQuantityVariable = {addToCartQuantity} handleOpenCartVariable = {handleOpenCart} handleCloseCartVariable={handleCloseCart} toggleVariable = {toggle} handleToggleVariable = {handleToggle} handleCheckOutVariable = {handleCheckOut} checkOutVariable = {checkOut} handleRemoveVariable = {handleRemove} />
         <Switch>
                 <Route exact path={`/about`}>
