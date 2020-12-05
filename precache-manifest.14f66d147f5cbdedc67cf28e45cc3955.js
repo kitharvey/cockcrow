@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a916bed732637739bf086529de54745",
+    "revision": "b74d414539338bed467574bd1f995e89",
     "url": "/cockcrow/index.html"
   },
   {
-    "revision": "9aec32943a20bc46c4a3",
+    "revision": "596208659dd0ce4ed032",
     "url": "/cockcrow/static/css/main.99df1828.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cockcrow/static/js/2.522df9ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9aec32943a20bc46c4a3",
-    "url": "/cockcrow/static/js/main.b6be478d.chunk.js"
+    "revision": "596208659dd0ce4ed032",
+    "url": "/cockcrow/static/js/main.ca3de381.chunk.js"
   },
   {
     "revision": "5a318b528e03ade0a65a",
