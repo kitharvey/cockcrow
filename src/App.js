@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './css/style.css';
+import './sass/style.scss';
 import Navigation from './Components/Navigation'
 import {
   HashRouter as Router,

@@ -6,6 +6,7 @@ header{
     justify-content: center;
     align-items: center;
     background: $color3;
+    
     .navbar{
         width: 100%;
         margin: 0 10%;
@@ -13,9 +14,11 @@ header{
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        position: sticky;
 
         .logo{     
             margin-right: auto;
+            animation: $fade-in;
             a {
                 img {
                     margin-top: auto;
@@ -35,6 +38,7 @@ header{
             visibility: hidden;
             z-index: -1;
             position: relative;
+            animation: $fade-in;
             .burger{
                 position: absolute;
                 top: 16px;
@@ -86,6 +90,7 @@ header{
             align-items: center;
             flex-direction: row;
             width: 30%;
+            animation: $fade-in;
             .menu-items{
                 text-decoration: none;
                 text-transform: uppercase;
@@ -106,6 +111,7 @@ header{
 
         .cart-btn{
             margin-left: 10%;
+            animation: $fade-in;
             .cart-button{
                 color: $color;
                 font-size: 1.5rem;
@@ -138,19 +144,26 @@ header{
 }
 
 
+
 @media (orientation: portrait){
     header{
         .navbar{
-            width: 95%;
+            width: 100%;
+            padding: 10px;
             margin: 0 auto;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            background-color: #ffffff;
             .menu-button{
                 visibility: visible;
                 z-index: 2;
                 margin-left: 5%;
+                position: relative;
 
                 .burger{
-                    top: 40px;
-                    position: fixed;
+                    // top: 40px;
+                    position: absolute;
                 }
             }
             .menu{

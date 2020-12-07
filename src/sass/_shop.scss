@@ -13,6 +13,7 @@
             align-items: center;
             justify-content: center;
             width:  40%;
+            animation: $fade-in;
             img{
                 height: auto;
                 width:  300px;
@@ -21,6 +22,7 @@
         
         .product-details{
             width:  40%;
+            animation: $fade-in;
             .product-description, .price{
                 margin: 5% 0;
             }
