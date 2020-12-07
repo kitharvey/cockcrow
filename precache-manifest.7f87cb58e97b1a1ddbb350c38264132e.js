@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b74d414539338bed467574bd1f995e89",
+    "revision": "1fc278e7d5710d7d0c367208811e968c",
     "url": "/cockcrow/index.html"
   },
   {
-    "revision": "596208659dd0ce4ed032",
-    "url": "/cockcrow/static/css/main.99df1828.chunk.css"
+    "revision": "ebeb1e5cf8984bfc24d1",
+    "url": "/cockcrow/static/css/main.862885b3.chunk.css"
   },
   {
     "revision": "8179ea75fb0653ad8c25",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cockcrow/static/js/2.522df9ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "596208659dd0ce4ed032",
-    "url": "/cockcrow/static/js/main.ca3de381.chunk.js"
+    "revision": "ebeb1e5cf8984bfc24d1",
+    "url": "/cockcrow/static/js/main.e8ff06df.chunk.js"
   },
   {
     "revision": "5a318b528e03ade0a65a",
